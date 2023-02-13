@@ -1,6 +1,17 @@
 ---
 title: "Practice Activity 6"
+<<<<<<< HEAD
 author: "Will Gladden, Gio Thai, Soren Pateu"
+=======
+#<<<<<<< HEAD
+author: "Will Gladden, Gio Thai, Soren Paetau"
+#=======
+#author: "Will, Gio, Soren"
+#>>>>>>> 2d02fc364c2c492b94c203e218319719a806c1c4
+format: html
+editor: visual
+self-contained: true
+>>>>>>> ad2dd91396621c0446dc0785eddd5032bdbb9449
 ---
 
 ## Quarto bruh
