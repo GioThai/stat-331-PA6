@@ -1,9 +1,6 @@
 ---
 title: "Practice Activity 6"
-author: "Will, Gio, Soren"
-format: html
-editor: visual
-self-contained: true
+author: "Will Gladden, Gio Thai, Soren Pateu"
 ---
 
 ## Quarto bruh
