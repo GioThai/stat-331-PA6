@@ -1,5 +1,6 @@
 ---
 title: "Practice Activity 6"
+author: "Will Gladden, Gio Thai, Soren Paetau"
 format: html
 editor: visual
 self-contained: true
