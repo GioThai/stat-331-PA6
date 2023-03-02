@@ -1,5 +1,5 @@
 ---
-title: "STAT331 Final Project"
+title: "STAT331 Final Project Proposal"
 author: "Giovani Thai, William Gladden, Soren Paetau"
 format: 
   html:
@@ -19,29 +19,26 @@ execute:
 
 ```{r}
 library(tidyverse)
+
 ```
 
 ## Project Proposal
 
 ```{r}
+#importing data
 sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv")
 income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
-
 ```
 
 ## Running Code
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Data Description
+
+## Hypothesized Relationship
+
+## Data Cleaning Process
 
 ```{r}
-303030303030
+#data cleaning + joining
 ```
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
