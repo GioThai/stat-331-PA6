@@ -19,10 +19,18 @@ execute:
 
 ```{r}
 library(tidyverse)
+
+```
+
+## Project Proposal
+
+```{r}
 #importing data
 sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv")
 income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
 ```
+
+## Running Code
 
 ## Data Description
 
