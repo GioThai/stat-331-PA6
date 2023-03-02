@@ -47,5 +47,10 @@ income.clean <- income.data |>
   pivot_longer(cols = `1799`:`2049`,
                names_to = "year",
                values_to = "income")
+
+insane.data <- inner_join(sanitation.clean, income.clean)
 ```
 
+if str_detect k
+then 
+1000 * (as.numeric(str_remove(3939k))
