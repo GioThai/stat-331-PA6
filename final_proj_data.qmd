@@ -31,8 +31,27 @@ income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.c
 ```
 
 ## Data Description
+```{r}
+head(income.data)
+```
+The income data set measures the total GDP of a country per person for 216 countries between the years of 1892 and 2049, with units in fixed 2017 prices. This number is adjusted for PPP, or the differences between costs of living and essential products, across countries. The data comes from the World Bank, the Maddison Project Database, and the Penn World Table. Historical estimates were used for early years; forecasts from the IMF's Economic Outlook were used to project income in the future.
+
+Source: https://www.gapminder.org/data/documentation/gd001/
+
+```{r}
+head(sanitation.data)
+```
+The sanitation data set measures the percentage of people (living in both urban and rural settings) who use at lease basic sanitation services not shared with other households. This includes:
+
++ flushing/pouring to piped sewer systems
++ septic
++ ventilation for pit latrines (e.g. squat toilets)
+
+
 
 ## Hypothesized Relationship
+We hypothesize that there will be a positive relation between income per person and percentage of people with basic sanitation at their disposal. We would also like to investigate and highlight any potential outliers, such as moments in time where certain countries failed to improve sanitation with increased income, or drastic dips/surges in income/sanitation over a single year.
+
 
 ## Data Cleaning Process
 
