@@ -26,7 +26,8 @@ library(tidyverse)
 ```{r}
 #importing data
 sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv", check.names = F)
-income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv", check.names = F)
+income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
+colnames(income.data) <- c("country", 1799:2049)
 ```
 
 ## Data Description
