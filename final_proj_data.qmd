@@ -19,15 +19,16 @@ execute:
 
 ```{r}
 library(tidyverse)
-
+library(janitor)
 ```
 
 ## Project Proposal
 
 ```{r}
 #importing data
-sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv")
+sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv", check.names = F)
 income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
+#colnames(income.data) <- c("country", 1799:2049)
 ```
 
 ## Data Description
@@ -47,15 +48,34 @@ The sanitation data set measures the percentage of people (living in both urban 
 + septic
 + ventilation for pit latrines (e.g. squat toilets)
 
+The data was collected by the World Health Organization and UNICEF.
 
+Source: https://data.worldbank.org/indicator/SH.STA.SMSS.ZS
 
 ## Hypothesized Relationship
 We hypothesize that there will be a positive relation between income per person and percentage of people with basic sanitation at their disposal. We would also like to investigate and highlight any potential outliers, such as moments in time where certain countries failed to improve sanitation with increased income, or drastic dips/surges in income/sanitation over a single year.
 
 
 ## Data Cleaning Process
-
+replace na values with either median or mean (tbd)
 ```{r}
 #data cleaning + joining
+sanitation.clean <- sanitation.data |>
+  pivot_longer(cols = `1999`:`2019`,
+               names_to = "year",
+               values_to = "sanitation")
+
+income.clean <- income.data |>
+  pivot_longer(cols = X1799:X2049,
+               names_to = "year",
+               values_to = "income")
+```
+
+```{r}
+income.data |>
+  clean_names() |>
+  pivot_longer(cols = "x1799":"x2049",
+               names_to = "Year",
+               values_to = "Income")
 ```
 
