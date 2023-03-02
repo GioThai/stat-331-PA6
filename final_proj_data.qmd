@@ -22,12 +22,12 @@ library(tidyverse)
 ```
 
 ## Project Proposal
+
 ```{r}
 sanitation.data <- read.csv("at_least_basic_sanitation_overall_access_percent.csv")
 income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
 
 ```
-
 
 ## Running Code
 
