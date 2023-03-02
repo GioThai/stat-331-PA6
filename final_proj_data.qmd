@@ -37,14 +37,14 @@ income.data <- read.csv("income_per_person_gdppercapita_ppp_inflation_adjusted.c
 replace na values with either median or mean (tbd)
 ```{r}
 #data cleaning + joining
+sanitation.clean <- sanitation.data |>
+  pivot_longer(cols = `1999`:`2019`,
+               names_to = "year",
+               values_to = "sanitation")
+
 income.clean <- income.data |>
   pivot_longer(cols = `1799`:`2049`,
                names_to = "year",
                values_to = "income")
-sanitation.clean <- snaitation.data |>
-  picot_longer(cols = `1999`:`2019`,
-               names_to = "year",
-               values_to = "sanitation")
-
 ```
 
