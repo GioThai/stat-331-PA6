@@ -1,9 +1,20 @@
 ---
-title: "Practice Activity 6"
-author: "Will Gladden, Gio Thai, Soren Paetau"
-format: html
-editor: visual
-self-contained: true
+title: "STAT331 Final Project"
+author: "Giovani Thai, William Gladden, Soren Paetau"
+format: 
+  html:
+    self-contained: true
+    code-tools: true
+    code-fold: true
+    toc: true
+    number-sections: true
+    smooth-scroll: true
+editor: source
+execute: 
+  error: true
+  echo: true
+  message: false
+  warning: false
 ---
 
 ## Quarto bruh
